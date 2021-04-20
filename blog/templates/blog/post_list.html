@@ -1,14 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>SOLDA</title>
+        <title>Sol's Blog</title>
         <link rel="stylesheet" href="/static/css/index.css" />
-        <!--CSS-->
     </head>
+
     <body>
-        <h1 id="title" class="btn">BODY TITLE</h1>
-        <script src="/static/js/index.js"></script>
-        <!--JS-->
+        <div class="js-clock">
+            <h1>Time</h1>
+            <!--<h1 class="js-title"></h1>-->
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?" />
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+
+        <script src="/static/js/clock.js"></script>
+        <script src="/static/js/greeting.js"></script>
     </body>
 </html>
