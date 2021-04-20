@@ -1,7 +1,7 @@
 //const first = document.getElementById("title");
 const title = document.querySelector("#title");
 
-title.innerHTML = "CLICK ME";
+title.innerHTML = "PMJ";
 // title.style.color = "yellow";
 document.title = "Beautiful";
 
