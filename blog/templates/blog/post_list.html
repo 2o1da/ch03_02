@@ -2,25 +2,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sol's Blog</title>
-        <link rel="stylesheet" href="/static/css/index.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="DaSol Kim" />
+        <title>SOL</title>
+        <link rel="stylesheet" href="/static/css/styles.css" />
     </head>
 
     <body>
-        <center>
-            <div class="js-clock">
-                <h1>Time</h1>
-                <!--<h1 class="js-title"></h1>-->
+        <section class="center">
+            <div class="js-clock clock">
+                <h1 class="clock__text">00:00</h1>
             </div>
-            <form class="js-form form">
-                <input type="text" placeholder="What is your name?" />
-            </form>
-            <h4 class="js-greetings greetings"></h4>
-            <h1 id="title" class="btn">TITLE</h1>
-        </center>
 
-        <script src="/static/js/index.js"></script>
+            <div class="js-name name"></div>
+
+            <div>
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="Write a to do here" />
+                </form>
+
+                <ul class="js-toDoList"></ul>
+            </div>
+            <h4 class="js-greetings greetings"></h4>
+        </section>
+
+        <div class="js-location location">
+            <span class="location__text"></span>
+        </div>
+        <div class="js-weather weather">
+            <span class="js-weather"></span>
+        </div>
+
+        <script src="/static/js/todo.js"></script>
         <script src="/static/js/clock.js"></script>
         <script src="/static/js/greeting.js"></script>
+        <script src="/static/js/bg2.js"></script>
+        <script src="/static/js/weather.js"></script>
     </body>
 </html>
