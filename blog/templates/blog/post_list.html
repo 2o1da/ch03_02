@@ -10,8 +10,6 @@
 
     <title>SOL</title>
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstraptheme.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 
@@ -31,6 +29,7 @@
         </li>
     </ul>
     <div class="jumbotron">
+
         <h1 class="display-4">Sol blog</h1>
         <p class="lead">2017110268 DaSol Kim</p>
         <hr class="my-4">
@@ -38,7 +37,13 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Menu</a>
     </div>
 
-    <div class="content container">
+    <div>
+        <h3 class="title">I Wish You Were Here</h3>
+        <img src="{%static 'sample_image.jpeg'%}">
+    </div>
+    <video src="{%static 'sample_video.mp4'%}"></video>
+
+    <div class="content container bg-img">
         <div class="row">
             <div class="col-md-8">
                 {% for post in posts %}
@@ -53,6 +58,12 @@
                 {% endfor %}
             </div>
         </div>
+    </div>
+
+    <div class="video-box">
+        <video class="video-container" poster="./sample_image.jpeg" autoplay muted>
+            <source src="./sample_video.mp4" type="video/mp4">
+        </video>
     </div>
 </body>
 
